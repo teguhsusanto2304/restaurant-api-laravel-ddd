@@ -21,7 +21,7 @@ git clone https://github.com/teguh.git
 Install dependencies using Composer:
 
 ```bash
-cd RestauranAPI
+cd restaurant-api-laravel-ddd
 composer install
 ```
 
