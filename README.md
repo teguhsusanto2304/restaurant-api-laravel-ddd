@@ -21,7 +21,7 @@ git clone https://github.com/teguh.git
 Install dependencies using Composer:
 
 ```bash
-cd RestauranAPI
+cd restaurant-api-laravel-ddd
 composer install
 ```
 
@@ -63,6 +63,26 @@ You can learn on API Document at
 - Laravel 10
 - Mysql 5
 - Domain Driven Design (DDD) architecture
+
+## Domain Driven Design (DDD) architecture
+
+1. DiningTable
+   - App\Modules\Http\Controllers\DiningTableController.php as Controller
+   - App\Modules\DiningTable.php as Model
+   - App\Modules\DiningTableDTO.php as Data Transfer Object
+   - App\Modules\DiningTableReposetory.php as a gateway between Controller code and the persistence layer (database)
+   - App\Modules\DiningTableReposetoryInterface.php as a layer of abstraction between the domain layer and the persistence layer
+   - App\Modules\DiningTableService.php as a Service encapsulates business logic
+   - App\Modules\DiningTableServiceInterface.php as a layer of abstraction between the service layer
+3. Reservation
+   - App\Modules\Http\Controllers\ReservationController.php as Controller
+   - App\Modules\Reservation.php as Model
+   - App\Modules\ReservationDTO.php as Data Transfer Object
+   - App\Modules\ReservationReposetory.php as a gateway between Controller code and the persistence layer (database)
+   - App\Modules\ReservationReposetoryInterface.php as a layer of abstraction between the domain layer and the persistence layer
+   - App\Modules\ReservationService.php as a Service encapsulates business logic
+   - App\Modules\ReservationServiceInterface.php as a layer of abstraction between the service layer
+
 
 ## License
 
