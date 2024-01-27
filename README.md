@@ -84,7 +84,7 @@ You can learn on API Document at
    - App\Modules\ReservationServiceInterface.php as a layer of abstraction between the service layer
 
 ## Databse Structure
-[Image] [https://github.com/teguhsusanto2304/restaurant-api-laravel-ddd/blob/main/documentation/erd.png]
+![ERD](https://github.com/teguhsusanto2304/restaurant-api-laravel-ddd/blob/main/documentation/erd.png)
 ## License
 
 This project is licensed under the GPL-3.0 license.
